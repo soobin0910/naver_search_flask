@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ heading }}</h1>
+    <form action="/search" method="post">
+        <input type="text" name="query">
+        <button type="submit">검색</button>
+    </form>
+
+{% endblock %}
